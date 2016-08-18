@@ -1,0 +1,38 @@
+{
+  "name": "The Latest",
+  "version": "0.1",
+  "description": "Get the Latest news straight from your address bar",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Action Title",
+    "default_popup": "src/popup/index.html"
+  },
+  "permissions": [
+    "http://*.google.com/",
+    "bookmarks",
+    "chrome://favicon/",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus",
+    "cookies",
+    "fileBrowserHandler",
+    "geolocation",
+    "history",
+    "idle",
+    "management",
+    "notifications",
+    "tabs",
+    "tts",
+    "ttsEngine",
+    "unlimitedStorage"
+  ],
+  "content_security_policy": "script-src https://api.twitter.com; object-src 'self'",
+  "options_page": "src/options/index.html",
+  "manifest_version": 2
+}
